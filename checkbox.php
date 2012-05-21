@@ -1,1 +1,1 @@
-The following were checked: <?php echo htmlspecialchars($_POST); ?>
+The following were checked: <?php foreach ($_POST as $element) { echo htmlspecialchars($element); } ?>
