@@ -1,1 +1,1 @@
-Item was <?php echo htmlspecialchars($_POST['vehicle']); ?>
+The following were checked: <?php echo htmlspecialchars($_POST); ?>
