@@ -4,8 +4,11 @@
  </head>
  <body>
  <?php
-  foreach ($_SERVER as $element) {
-    echo htmlspecialchars($element);
+  foreach ($_SERVER as $key => $value) {
+    echo htmlspecialchars($key);
+    echo ":";
+    echo htmlspecialchars($value);
+    echo "\n";
   }
 ?>
 
