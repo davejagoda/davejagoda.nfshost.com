@@ -5,7 +5,7 @@
  <body>
  <?php
   foreach ($_SERVER as $key => $value) {
-   if is_array($value) {
+   if (is_array($value)) {
     foreach ($value as $k => $v) {
      echo htmlspecialchars($k);
      echo ":";
