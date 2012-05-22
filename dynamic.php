@@ -8,7 +8,7 @@
     echo htmlspecialchars($key);
     echo ":";
     echo htmlspecialchars($value);
-    echo "\n";
+    echo "<br>";
   }
 ?>
 
