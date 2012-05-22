@@ -3,8 +3,15 @@
   <title>dynamic</title>
  </head>
  <body>
- <?php echo $_SERVER['HTTP_USER_AGENT']; ?>
- </body>
+ <?php
+  foreach ($_SERVER as $array) {
+    foreach ($array as $element) {
+      echo htmlspecialchars($element);
+    }
+  }
+?>
+
+</body>
 </html>
 
 
