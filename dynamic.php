@@ -12,7 +12,7 @@
      echo htmlspecialchars($v);
      echo "<br>";
     }
-   else {
+   } else {
     echo htmlspecialchars($key);
     echo ":";
     echo htmlspecialchars($value);
