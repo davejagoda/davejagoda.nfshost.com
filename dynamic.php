@@ -4,6 +4,7 @@
  </head>
  <body>
  <?php
+  ksort($_SERVER);
   foreach ($_SERVER as $key => $value) {
    if (is_array($value)) {
     foreach ($value as $k => $v) {
