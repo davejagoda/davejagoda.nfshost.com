@@ -26,6 +26,10 @@ now save and quit emacs
 
 ## On any host you’d like to push from (change USERNAME):
 
+go here to add the host's ssh public key:
+
+https://members.nearlyfreespeech.net/USERNAME/profile/add_ssh_key
+
 ```git remote add website ssh://USERNAME@ssh.phx.nearlyfreespeech.net/home/private/.git```
 
 ## To push after the setup:
