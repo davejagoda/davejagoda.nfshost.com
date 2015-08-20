@@ -14,13 +14,13 @@
      echo htmlspecialchars($k);
      echo ":";
      echo htmlspecialchars($v);
-     echo "<br>";
+     echo "<br>\n";
     }
    } else {
     echo htmlspecialchars($key);
     echo ":";
     echo htmlspecialchars($value);
-    echo "<br>";
+    echo "<br>\n";
    }
   }
  ?>
@@ -35,13 +35,13 @@
      echo htmlspecialchars($k);
      echo ":";
      echo htmlspecialchars($v);
-     echo "<br>";
+     echo "<br>\n";
     }
    } else {
     echo htmlspecialchars($key);
     echo ":";
     echo htmlspecialchars($value);
-    echo "<br>";
+    echo "<br>\n";
    }
   }
  ?>
