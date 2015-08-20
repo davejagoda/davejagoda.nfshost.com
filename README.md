@@ -16,7 +16,7 @@ http://davejagoda.nfshost.com
     emacs post-receive
 ```
 
-you’re in emacs, now add this line
+you're in emacs, now add this line
 
 ```GIT_WORK_TREE=/home/public git checkout -f```
 
@@ -24,7 +24,7 @@ now save and quit emacs
 
 ```chmod +x post-receive```
 
-## On any host you’d like to push from (change USERNAME):
+## On any host you'd like to push from (change USERNAME):
 
 go here to add the host's ssh public key:
 
