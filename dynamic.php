@@ -3,6 +3,7 @@
   <title>dynamic</title>
  </head>
  <body>
+ <br>
  <b>SERVER</b>
  <br>
  <?php
@@ -23,6 +24,7 @@
    }
   }
  ?>
+ <br>
  <b>POST</b>
  <br>
  <?php
