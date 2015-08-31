@@ -8,12 +8,12 @@ http://davejagoda.nfshost.com
 ## On Nearly Free Speech Net:
 
 ```
-    cd
-    mkdir .git
-    cd .git
-    git init --bare
-    cd hooks/
-    emacs post-receive
+cd
+mkdir .git
+cd .git
+git init --bare
+cd hooks/
+emacs post-receive
 ```
 
 you're in emacs, now add this line
@@ -48,8 +48,29 @@ To update the webserver, ssh on to it and type:
 
 ```git pull git://github.com/davejagoda/davejagoda.nfshost.com.git```
 
-# bibliography
+###### bibliography
 
 http://www.nerdess.net/blog/nerdy/git-by-example-how-to-update-your-website-on-nearlyfreespeech-net-via-git
 
 https://andytaylor.me/2012/11/03/nfs-git/
+
+# HTTP post examples
+
+```
+curl --data "item=foo" http://davejagoda.nfshost.com/post.php
+Item was foo<br>
+Elem was <br>
+
+curl --data "item=foo&elem=bar" http://davejagoda.nfshost.com/post.php
+Item was foo<br>
+Elem was bar<br>
+
+curl --data "ham=sandwich" http://davejagoda.nfshost.com/post.php
+Item was <br>
+Elem was <br>
+
+curl --data "item=foo&elem=bar&ham=sandwich" http://davejagoda.nfshost.com/post.php
+Item was foo<br>
+Elem was bar<br>
+
+```
