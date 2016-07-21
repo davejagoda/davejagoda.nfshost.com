@@ -1,1 +1,17 @@
-p { font-size:50px; font-family:"monospace"; text-align:left; }
+body {
+    text-align: left;
+    font-family: monospace
+}
+
+p {
+    font-size: large
+}
+
+table {
+    border: 1px solid black
+}
+
+td {
+    border: 1px solid black;
+    text-align: center
+}
