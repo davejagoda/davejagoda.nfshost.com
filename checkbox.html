@@ -6,10 +6,41 @@
   </head>
   <body>
     <form action="checkbox.php" method="post">
-      <label><input type="checkbox" name="perl" value="perl" />perl</label><br />
-      <label><input type="checkbox" name="php" value="php" />php</label><br />
-      <label><input type="checkbox" name="python" value="python" />python</label><br />
-      <input type="submit" value="submit" />
+      <table class="no_border">
+        <tbody id="tbody_id">
+          <tr>
+            <td class="no_border"><input type="checkbox" name="perl" value="perl" /></td>
+            <td class="no_border">perl</td>
+          </tr>
+          <tr>
+            <td class="no_border"><input type="checkbox" name="php" value="php" /></td>
+            <td class="no_border">php</td>
+          </tr>
+          <tr>
+            <td class="no_border"><input type="checkbox" name="python" value="python" /></td>
+            <td class="no_border">python</td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="submit" value="submit" /></td>
     </form>
+    <script>
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.name = "javascript";
+    checkbox.value = "javascript";
+    var tr = document.createElement("tr");
+    var td1 = document.createElement("td");
+    td1.className = "no_border";
+    td1.appendChild(checkbox);
+    var td2 = document.createElement("td");
+    td2.className = "no_border";
+    td2.textContent = "javascript";
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    setTimeout(function() {
+      document.getElementById("tbody_id").appendChild(tr);
+    }, 3000);
+    </script>
   </body>
 </html>
