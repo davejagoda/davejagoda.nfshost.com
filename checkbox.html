@@ -26,15 +26,17 @@
     </form>
     <script>
     var checkbox = document.createElement("input");
+    checkbox.className = "dynamic";
     checkbox.type = "checkbox";
     checkbox.name = "javascript";
     checkbox.value = "javascript";
     var tr = document.createElement("tr");
+    tr.className = "dynamic";
     var td1 = document.createElement("td");
-    td1.className = "no_border";
+    td1.className = "no_border dynamic";
     td1.appendChild(checkbox);
     var td2 = document.createElement("td");
-    td2.className = "no_border";
+    td2.className = "no_border dynamic";
     td2.textContent = "javascript";
     tr.appendChild(td1);
     tr.appendChild(td2);
