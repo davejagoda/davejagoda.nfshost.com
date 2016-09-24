@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>programmatic</title>
+  </head>
+  <body id="body_id">
+    <script>
+    setTimeout(function() {
+      for (var i = 1; i <= 6; i++) {
+        var headline = document.createElement("h" + i);
+        headline.textContent = "headline" + i;
+        document.getElementById("body_id").appendChild(headline);
+      }
+    }, 3000);
+    </script>
+  </body>
+</html>
