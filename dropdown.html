@@ -5,7 +5,8 @@
     <title>dropdown</title>
   </head>
   <body>
-    <select name="direction">
+    <select name="direction" onchange="alert('direction changed')">
+      <option value="" disabled selected>direction</option>
       <option value="north">北</option>
       <option value="south">南</option>
       <option value="east">東</option>
