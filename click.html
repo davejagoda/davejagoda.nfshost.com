@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>click</title>
+  </head>
+  <body>
+    <p>Here are some example pages.</p>
+    <div id="test">click here</div>
+    <script>
+      document.getElementById("test").addEventListener("click", function( event ) {
+      // display the current click count inside the clicked div
+      event.target.innerHTML = "click count: " + event.detail;
+      }, false);
+    </script>
+  </body>
+</html>
