@@ -7,11 +7,14 @@
   <body id="body_id">
     <script>
     setTimeout(function() {
-      for (var i = 1; i <= 6; i++) {
+      for (var i = 1; i <= 7; i++) {
         var headline = document.createElement("h" + i);
         headline.textContent = "headline" + i;
         document.getElementById("body_id").appendChild(headline);
-      }
+      };
+      var paragraph = document.createElement("p");
+      paragraph.textContent = "paragraph";
+      document.getElementById("body_id").appendChild(paragraph);
     }, 3000);
     </script>
   </body>
