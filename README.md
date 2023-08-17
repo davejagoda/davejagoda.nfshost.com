@@ -57,20 +57,46 @@ https://andytaylor.me/2012/11/03/nfs-git/
 # HTTP post examples
 
 ```
-curl --data "item=foo" http://davejagoda.nfshost.com/post.php
-Item was foo<br>
-Elem was <br>
+curl --data "item=xyz&elem=abc&data=jkl" https://davejagoda.nfshost.com/post.php
 
-curl --data "item=foo&elem=bar" http://davejagoda.nfshost.com/post.php
-Item was foo<br>
-Elem was bar<br>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>POST</title>
+  </head>
+  <body>
+    <p>POST</p>
+    Array
+(
+    [item] => xyz
+    [elem] => abc
+    [data] => jkl
+)
+    <p>JSON</p>
+      </body>
+</html>
 
-curl --data "ham=sandwich" http://davejagoda.nfshost.com/post.php
-Item was <br>
-Elem was <br>
+curl --header "Content-Type: application/json" --data '{"item":"xyz","elem":"abc","data":"jkl"}' https://davejagoda.nfshost.com/post.php
 
-curl --data "item=foo&elem=bar&ham=sandwich" http://davejagoda.nfshost.com/post.php
-Item was foo<br>
-Elem was bar<br>
-
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>POST</title>
+  </head>
+  <body>
+    <p>POST</p>
+    Array
+(
+)
+    <p>JSON</p>
+    stdClass Object
+(
+    [item] => xyz
+    [elem] => abc
+    [data] => jkl
+)
+  </body>
+</html>
 ```
