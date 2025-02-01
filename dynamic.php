@@ -46,5 +46,21 @@
  }
 ?>
  <br>
+ <b>FILE</b>
+ <br>
+<?php
+ $file_data = file_get_contents('php://input');
+ $json_data = json_decode($file_data);
+ if (!is_null($json_data)) {
+  echo json_encode($json_data, JSON_PRETTY_PRINT);
+  echo "\n";
+ } else {
+  if (!is_null($file_data)) {
+   echo $file_data;
+   echo "\n";
+  }
+ }
+?>
+ <br>
  </body>
 </html>
